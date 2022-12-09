@@ -1,68 +1,57 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Gallery popup</title>
-		<script src="js/lib/jquery-1.8.3.min.js"></script>
-		
-		<style type="text/css">
-			div.clearfix{
-				clear:both;
-			}
-			body{
-				font-family: Helvetica;
-				font-size: 10px;
-				margin: 0;
-				padding: 0;
-			}
-			div.list{
-				padding: 10px 10px;
-				background: #efefef;
-				
-			}
-			div.list > .item{
-				margin: 10px 10px;
-				padding: 10px 10px;
-				background: #fefefe;
-				width: 200px;
-				float: left;
-				
-			}
-			div.list > .item.image{
-				
-			}
-			
-		</style>
-		
-	</head>
-	
-	<body>
-		
-		<section class="gallery">
-			
-			<div class="list">
-				<div class="item image">
-					<img src="" />
-					<dl>
-						<dt>Author</dt>
-						<dd>Jonas</dd>
-					</dl>
-					<p class="description">Whatever</p>
-				</div>
-				<div class="item image">
-					<img src="" />
-					<dl>
-						<dt>Author</dt>
-						<dd>Jonas</dd>
-					</dl>
-					<p class="description">Whatever</p>
-				</div> <!-- /item image -->
-				<div class="clearfix"></div>
-			</div><!-- /list -->
-		</section>
-		
-		
-		
-		<script src="js/gallery.js"></script>
-	</body>
-	
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+</body>
 </html>
