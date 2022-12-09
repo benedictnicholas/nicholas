@@ -1,16 +1,140 @@
-<HTML>
-<HEAD>
-<TITLE>Menu dengan Hyperlink</TITLE>
-</HEAD>
-<BODY>
-<font color="navy" size="4">Menu </font>
-<font color="sienna" size="4">
-<ul type="square">
- <li><a href="home.html" target="kanan">Home</a></li>
- <li><a href="profil.html" target="kanan">Rekomendasi Tempat Wisata</a></li>
- <li><a href="galery.html" target="kanan">Paket Wisata</a></li>
- <li><a href="kontak.html" target="kanan">Kontak</a></li>
- <li><a href="bulletnummering.html" target="kanan">Makanan Khas</a></li>
-</ul></font>
-</BODY>
-</HTML>
+<html>
+<head>
+ <title>Transportasi</title>
+</head>
+
+<style type="text/css">
+
+*{
+    font-family: "Times New Roman", serif;
+    line-height: 1.25;
+    padding: 40px 20px;
+  }
+  .header{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  table {
+    border: 1px solid green;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  table caption {
+    font-size: 1.5em;
+    margin: .25em 0 .75em;
+  }
+  table tr {
+    background: #FFEBCD;
+    border: 1px solid green;
+    padding: .35em;
+  }
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: #483D8B;
+    color: white;
+  }
+  table td img {
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    table caption {
+      font-size: 1.3em;
+    }
+    table thead {
+      display: none;
+    }
+    table tr {
+      border-bottom: 3px solid green;
+      display: block;
+      margin-bottom: .725em;
+    }
+    table td {
+      border-bottom: 1px solid green;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    table td:last-child {
+      border-bottom: 0;
+    }
+}
+
+</style>
+<body>
+    <body>
+ 
+        <table>
+          <caption>Transportasi Umum</caption>
+         
+        <thead>
+            <tr>
+         
+            <th scope="col">Transportasi</th>
+            <th scope="col">Tujuan</th>
+            <th scope="col">Harga</th>     
+            <th scope="col">Rekomendasi Web Tiket</th>
+         
+            </tr>
+        </thead>
+         
+        <tbody>
+          <tr>
+         
+            <td scope="row" data-label="Transportasi">Kereta Api</td>
+            <td scope="row" data-label="Tujuan">Jakarta-Jogja</td>
+            <td data-label="Harga">RP.75.000,00-Rp.200.000,00</td>     
+            <td><a herf="https://www.tiket.com/kereta-api/cari?d=JAKARTA&dt=CITY&a=YOGYAKARTA&at=CITY&adult=1&infant=0&date=2022-12-09">Tiket.com</a></td>
+         
+          </tr>
+         
+        <tr>
+         
+            <td scope="row" data-label="Transportasi">Bus</td>
+            <td scope="row" data-label="Tujuan">Jakarta-Jogja</td>
+            <td data-label="Harga">Rp.185.000,00</td>
+            <td><a herf="https://www.redbus.id/tiket-bus/jakarta-ke-yogyakarta-jogja?fromCityName=Jakarta&fromCityId=193490&toCityName=Yogyakarta%20(jogja)&toCityId=193479&busType=Any&opId=0&onward=09-Dec-2022&return=16-Dec-2022">Redbus.id</a></td>
+         
+          </tr>
+         
+         
+        <tr>
+         
+            <td scope="row" data-label="Transportasi">Travel</td>
+            <td scope="row" data-label="Tujuan">Jakarta-Jogja</td>
+            <td data-label="Harga">Rp.165.000,00-Rp.225.000,00</td>
+            <td><a herf="https://www.traveloka.com/id-id/tiket-bus-travel/search?st=a102813.a107442&stt=CITY_GEO.CITY_GEO&dt=09-12-2022.null&ps=1">Traveloka.com</a></td>
+         
+          </tr>
+         
+         
+        <tr>
+         
+            <td scope="row" data-label="Transportasi">Pesawat</td>
+            <td scope="row" data-label="Tujuan">Jakarta-Jogja</td>
+            <td data-label="Harga">Rp.524.000,00-Rp.3.347.000,00</td>
+            <td><a herf="https://www.google.com/flights?sxsrf=ALiCzsY01ekoeBokeXHRIDgMYaPYUNbR-g%3A1670573244145&source=flun&uitype=cuAA&hl=id&gl=id&curr=IDR&tfs=CAEQAhopEgoyMDIyLTEyLTEwagwIAhIIL20vMDQ0cnZyDQgCEgkvbS8wZGc2eXh6aENqUklhMEpaVHpSbFUzVm9VbmRCUlZBd2FWRkNSeTB0TFMwdExTMHRMUzEwWW5Bek1VRkJRVUZCUjA5VE4weDNSa0Z5YWtGQkVnTnVTbFFhQ3dqQWdTQVFBQm9EU1VSU09BTndwUm89&ved=2ahUKEwiGlqemiuz7AhWeR2wGHVbUD1oQlhd6BAgLEB4">Google.com</a></td>
+         
+          </tr>
+         
+</tbody>
+</table>
+</body>
+</html>
